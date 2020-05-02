@@ -1,5 +1,12 @@
 <!DOCTYPE html>
-<html lang="en"><head>
+<!--
+    Basically Basic Jekyll Theme 1.4.4
+    Copyright 2017-2018 Michael Rose - mademistakes.com | @mmistakes
+    Free for personal and commercial use under the MIT license
+    https://github.com/mmistakes/jekyll-theme-basically-basic/blob/master/LICENSE
+-->
+<html lang="en-US" class="no-js">
+  <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.6.1 -->
@@ -13,9 +20,9 @@
 <meta property="og:url" content="https://oriolabril.github.io/test_fastpages/about/" />
 <meta property="og:site_name" content="Oriol unraveled" />
 <script type="application/ld+json">
-{"description":"Personal website of an enthusiast about open source and statistics","@type":"WebSite","headline":"About Me","url":"https://oriolabril.github.io/test_fastpages/about/","name":"Oriol unraveled","@context":"https://schema.org"}</script>
+{"description":"Personal website of an enthusiast about open source and statistics","headline":"About Me","@type":"WebSite","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://oriolabril.github.io/test_fastpages/images/logo.png"}},"url":"https://oriolabril.github.io/test_fastpages/about/","name":"Oriol unraveled","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
-<link rel="stylesheet" href="/test_fastpages/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://oriolabril.github.io/test_fastpages/feed.xml" title="Oriol unraveled" /><!-- the google_analytics_id gets auto inserted from the config file -->
+<link rel="stylesheet" href="/test_fastpages/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://oriolabril.github.io/test_fastpages/atom.xml" title="Oriol unraveled" /><!-- the google_analytics_id gets auto inserted from the config file -->
 
 
 
@@ -32,11 +39,11 @@
 <meta property="og:url" content="https://oriolabril.github.io/test_fastpages/about/" />
 <meta property="og:site_name" content="Oriol unraveled" />
 <script type="application/ld+json">
-{"description":"Personal website of an enthusiast about open source and statistics","@type":"WebSite","headline":"About Me","url":"https://oriolabril.github.io/test_fastpages/about/","name":"Oriol unraveled","@context":"https://schema.org"}</script>
+{"description":"Personal website of an enthusiast about open source and statistics","headline":"About Me","@type":"WebSite","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://oriolabril.github.io/test_fastpages/images/logo.png"}},"url":"https://oriolabril.github.io/test_fastpages/about/","name":"Oriol unraveled","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 <link href="https://unpkg.com/@primer/css/dist/primer.css" rel="stylesheet" />
-<link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css"><link type="application/atom+xml" rel="alternate" href="https://oriolabril.github.io/test_fastpages/feed.xml" title="Oriol unraveled" /><!-- the google_analytics_id gets auto inserted from the config file -->
+<link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css"><link type="application/atom+xml" rel="alternate" href="https://oriolabril.github.io/test_fastpages/atom.xml" title="Oriol unraveled" /><!-- the google_analytics_id gets auto inserted from the config file -->
 
 
 
@@ -106,31 +113,199 @@ window.onload = wrap_img;
     elem.forEach(e => (e.innerHTML = '<i class="fas fa-link fa-xs"></i>'));
     });
 </script>
-</head><body><header class="site-header">
+</head>
 
-  <div class="wrapper"><a class="site-title" rel="author" href="/test_fastpages/">Oriol unraveled</a><nav class="site-nav">
-        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
-        <label for="nav-trigger">
-          <span class="menu-icon">
-            <svg viewBox="0 0 18 15" width="18px" height="15px">
-              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
-            </svg>
-          </span>
-        </label>
+  <body class="layout--page about-me">
 
-        <div class="trigger"><a class="page-link" href="/test_fastpages/about/">About Me</a><a class="page-link" href="/test_fastpages/search/">Search</a><a class="page-link" href="/test_fastpages/categories/">Tags</a></div>
-      </nav></div>
-</header>
-<main class="page-content" aria-label="Content">
+    <nav class="skip-links">
+  <h2 class="screen-reader-text">Skip links</h2>
+  <ul>
+    <li><a href="#primary-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+
+    <div class="sidebar-toggle-wrapper">
+      
+        <button class="search-toggle" type="button">
+          <svg class="icon" width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.99 16">
+            <title>Search</title>
+            <path d="M15.5,13.12L13.19,10.8a1.69,1.69,0,0,0-1.28-.55l-0.06-.06A6.5,6.5,0,0,0,5.77,0,6.5,6.5,0,0,0,2.46,11.59a6.47,6.47,0,0,0,7.74.26l0.05,0.05a1.65,1.65,0,0,0,.5,1.24l2.38,2.38A1.68,1.68,0,0,0,15.5,13.12ZM6.4,2A4.41,4.41,0,1,1,2,6.4,4.43,4.43,0,0,1,6.4,2Z" transform="translate(-.01)"></path>
+          </svg>
+        </button>
+      
+
+      <button class="toggle navicon-button larr" type="button">
+        <span class="toggle-inner">
+          <span class="sidebar-toggle-label visually-hidden">Menu</span>
+          <span class="navicon"></span>
+        </span>
+      </button>
+    </div>
+
+    <div id="sidebar" class="sidebar">
+      <div class="inner">
+        <nav id="primary-nav" class="site-nav" itemscope itemtype="http://schema.org/SiteNavigationElement" aria-label="Main navigation">
+  <ul id="menu-main-navigation" class="menu">
+    <!-- Home link -->
+    <li class="menu-item">
+      <a href="/test_fastpages/" itemprop="url">
+        <span itemprop="name">Home</span>
+      </a>
+    </li>
+
+    <!-- site.pages links -->
+    
+    
+
+    
+      
+      
+    
+      
+      
+        <li class="menu-item">
+          <a href="/test_fastpages/about/" itemprop="url">
+            <span itemprop="name">About Me</span>
+          </a>
+        </li>
+      
+    
+      
+      
+        <li class="menu-item">
+          <a href="/test_fastpages/categories/" itemprop="url">
+            <span itemprop="name">Categories</span>
+          </a>
+        </li>
+      
+    
+      
+      
+    
+      
+      
+    
+      
+      
+    
+      
+      
+        <li class="menu-item">
+          <a href="/test_fastpages/search/" itemprop="url">
+            <span itemprop="name">Search</span>
+          </a>
+        </li>
+      
+    
+      
+      
+    
+      
+      
+        <li class="menu-item">
+          <a href="/test_fastpages/categories/" itemprop="url">
+            <span itemprop="name">Tags</span>
+          </a>
+        </li>
+      
+    
+      
+      
+    
+      
+      
+    
+      
+      
+    
+      
+      
+    
+      
+      
+    
+  </ul>
+</nav>
+
+        <ul class="contact-list">
+  
+
+  
+    <li><a href="https://github.com/OriolAbril">
+  <span class="icon icon--github"><svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414"><path d="M8 0C3.58 0 0 3.582 0 8c0 3.535 2.292 6.533 5.47 7.59.4.075.547-.172.547-.385 0-.19-.007-.693-.01-1.36-2.226.483-2.695-1.073-2.695-1.073-.364-.924-.89-1.17-.89-1.17-.725-.496.056-.486.056-.486.803.056 1.225.824 1.225.824.714 1.223 1.873.87 2.33.665.072-.517.278-.87.507-1.07-1.777-.2-3.644-.888-3.644-3.953 0-.873.31-1.587.823-2.147-.09-.202-.36-1.015.07-2.117 0 0 .67-.215 2.2.82.64-.178 1.32-.266 2-.27.68.004 1.36.092 2 .27 1.52-1.035 2.19-.82 2.19-.82.43 1.102.16 1.915.08 2.117.51.56.82 1.274.82 2.147 0 3.073-1.87 3.75-3.65 3.947.28.24.54.73.54 1.48 0 1.07-.01 1.93-.01 2.19 0 .21.14.46.55.38C13.71 14.53 16 11.53 16 8c0-4.418-3.582-8-8-8"/></svg></span>
+  <span class="label">GitHub</span>
+</a>
+</li>
+  
+
+  
+    <li><a href="https://twitter.com/OriolAbril">
+  <span class="icon icon--twitter"><svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414"><path d="M16 3.038c-.59.26-1.22.437-1.885.517.677-.407 1.198-1.05 1.443-1.816-.634.37-1.337.64-2.085.79-.598-.64-1.45-1.04-2.396-1.04-1.812 0-3.282 1.47-3.282 3.28 0 .26.03.51.085.75-2.728-.13-5.147-1.44-6.766-3.42C.83 2.58.67 3.14.67 3.75c0 1.14.58 2.143 1.46 2.732-.538-.017-1.045-.165-1.487-.41v.04c0 1.59 1.13 2.918 2.633 3.22-.276.074-.566.114-.865.114-.21 0-.41-.02-.61-.058.42 1.304 1.63 2.253 3.07 2.28-1.12.88-2.54 1.404-4.07 1.404-.26 0-.52-.015-.78-.045 1.46.93 3.18 1.474 5.04 1.474 6.04 0 9.34-5 9.34-9.33 0-.14 0-.28-.01-.42.64-.46 1.2-1.04 1.64-1.7z" fill-rule="nonzero"/></svg></span>
+  <span class="label">Twitter</span>
+</a>
+</li>
+  
+
+  <li>
+    
+      <a href="/test_fastpages/atom.xml" title="Atom Feed">
+        <span class="icon icon--rss"><svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414"><path d="M12.8 16C12.8 8.978 7.022 3.2 0 3.2V0c8.777 0 16 7.223 16 16h-3.2zM2.194 11.61c1.21 0 2.195.985 2.195 2.196 0 1.21-.99 2.194-2.2 2.194C.98 16 0 15.017 0 13.806c0-1.21.983-2.195 2.194-2.195zM10.606 16h-3.11c0-4.113-3.383-7.497-7.496-7.497v-3.11c5.818 0 10.606 4.79 10.606 10.607z"/></svg></span>
+        <span class="label">Subscribe</span>
+      </a>
+    
+  </li>
+</ul>
+
+      </div>
+    </div>
+
+    <div class="canvas">
       <div class="wrapper">
-        <article class="post">
+        
 
-  <header class="post-header">
-    <h1 class="post-title">About Me</h1>
-  </header>
+<header id="masthead">
+  <div class="inner">
+    <div class="title-area">
+      
+        <p class="site-title">
+          <a href="/test_fastpages/">
+            <img src="/test_fastpages/images/logo.png" alt="" class="site-logo">
+            <span>Oriol unraveled</span>
+          </a>
+        </p>
+      
+    </div>
+  </div>
+</header>
 
-  <div class="post-content">
-    <p>I’m a renegade physicist/engineer who loves statistical data analysis. By day,
+        <div class="initial-content">
+          <header class="intro">
+  
+
+  <div class="inner">
+    <div class="intro-text">
+      <h1 id="page-title" class="intro-title">About Me
+</h1>
+      
+
+      
+
+      
+
+      
+    </div>
+  </div>
+</header>
+
+
+<main id="main" class="page-content" aria-label="Content">
+  <div class="inner">
+    <article class="entry-wrap">
+      <div class="entry-content">
+        <p>I’m a renegade physicist/engineer who loves statistical data analysis. By day,
 I am currently a Research Assistant on Bayesian Model Selection with
 <a href="https://sites.google.com/site/rosselldavid/">David Rossell</a> at UPF,
 Barcelona. By night I am a core developer of
@@ -160,37 +335,111 @@ when nobody is around</p>
   <li>D. Foreman-Mackey, W. Farr, M. Sinha, A. Archibald, et al., 2019, <em>emcee v3: A Python ensemble sampling toolkit for affine-invariant MCMC.</em></li>
 </ul>
 
+      </div>
+    </article>
   </div>
+</main>
 
-</article>
+        </div>
 
-      </div>
-    </main><footer class="site-footer h-card">
-  <data class="u-url" href="/test_fastpages/"></data>
+        <div class="search-content">
+          <div class="inner">
+  <label class="visually-hidden" for="search">Site Search</label>
+        <input type="text" id="search" class="search-input" aria-describedby="results-count" tabindex="-1" placeholder="Enter your search term..." />
+        <div id="results" class="results"></div>
+</div>
 
-  <div class="wrapper">
-
-    <div class="footer-col-wrapper">
-      <div class="footer-col">
-        <p class="feed-subscribe">
-          <a href="/test_fastpages/feed.xml">
-            <svg class="svg-icon orange">
-              <use xlink:href="/test_fastpages/assets/minima-social-icons.svg#rss"></use>
-            </svg><span>Subscribe</span>
-          </a>
-        </p>
-      </div>
-      <div class="footer-col">
-        <p>Personal website of an enthusiast about open source and statistics</p>
+        </div>
       </div>
     </div>
 
-    <div class="social-links"><ul class="social-media-list"><li><a rel="me" href="https://github.com/OriolAbril" title="OriolAbril"><svg class="svg-icon grey"><use xlink:href="/test_fastpages/assets/minima-social-icons.svg#github"></use></svg></a></li><li><a rel="me" href="https://twitter.com/OriolAbril" title="OriolAbril"><svg class="svg-icon grey"><use xlink:href="/test_fastpages/assets/minima-social-icons.svg#twitter"></use></svg></a></li></ul>
-</div>
+    <footer id="footer" class="site-footer">
+  <div class="inner">
+    <div class="copyright">
+      
+        <p>Created by Oriol Abril. Powered by <a href="https://fastpages.fast.ai/">fastpages</a> and <a href="https://mmistakes.github.io/jekyll-theme-basically-basic/">Basically Basic</a></p>
 
+      
+    </div>
   </div>
-
 </footer>
-</body>
+
+    
+  <!-- the google_analytics_id gets auto inserted from the config file -->
+
+
+
+<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create','UA-165101251-1','auto');ga('require','displayfeatures');ga('send','pageview');</script>
+
+
+
+
+<script async src="/test_fastpages/assets/javascripts/main.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="https://oriolabril.github.io/test_fastpages/assets/javascripts/lunr/lunr.min.js"></script>
+  <script src="https://oriolabril.github.io/test_fastpages/assets/javascripts/lunr/lunr.store.js"></script>
+  <script>
+    var idx = lunr(function () {
+      
+      // the, the normal lunr index initialization
+      this.field('title')
+      this.field('excerpt')
+      this.field('categories')
+      this.field('tags')
+      this.ref('id')
+
+      this.pipeline.remove(lunr.trimmer)
+
+      // add documents to index
+      for (var item in store) {
+        this.add({
+          title: store[item].title,
+          excerpt: store[item].excerpt,
+          categories: store[item].categories,
+          tags: store[item].tags,
+          id: item
+        })
+      }
+    });
+
+    $(document).ready(function () {
+      $('input#search').on('keyup', function () {
+        var resultdiv = $('#results');
+        var query = $(this).val().toLowerCase();
+        var result =
+          idx.query(function (q) {
+            query.split(lunr.tokenizer.separator).forEach(function (term) {
+              q.term(term, { boost: 100 })
+              if (query.lastIndexOf(" ") != query.length - 1) {
+                q.term(term, { usePipeline: false, wildcard: lunr.Query.wildcard.TRAILING, boost: 10 })
+              }
+              if (term != "") {
+                q.term(term, { usePipeline: false, editDistance: 1, boost: 1 })
+              }
+            })
+          });
+        resultdiv.empty();
+        resultdiv.prepend('<p id="results-count" class="results-found">' + result.length + ' Result(s) found</p>');
+        for (var item in result) {
+          var ref = result[item].ref;
+          var searchitem =
+            '<article class="entry">' +
+              '<h3 class="entry-title">' +
+                '<a href="' + store[ref].url + '">' + store[ref].title + '</a>' +
+              '</h3>' +
+              '<div class="entry-excerpt">' +
+                '<p>' + store[ref].excerpt.split(" ").splice(0, 20).join(" ") + '...</p>' +
+              '</div>' +
+            '</article>';
+          resultdiv.append(searchitem);
+        }
+      });
+    });
+  </script>
+
+
+
+  </body>
 
 </html>
