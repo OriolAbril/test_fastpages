@@ -8,6 +8,8 @@
 
 title: Oriol unraveled
 description: Personal website of an enthusiast about open source and statistics
+logo: images/logo.png
+copyright: "Created by Oriol Abril. Powered by [fastpages](https://fastpages.fast.ai/) and [Basically Basic](https://mmistakes.github.io/jekyll-theme-basically-basic/)"
 github_username: OriolAbril
 # you can comment the below line out if your repo name is not different than your baseurl
 github_repo: "test_fastpages"
@@ -36,11 +38,7 @@ url: "https://OriolAbril.github.io" # the base hostname & protocol for your site
 #
 baseurl: "/test_fastpages" # the subpath of your site, e.g. "/blog".
 
-# Github and twitter are optional:
-minima:
-  social_links:
-    twitter: OriolAbril
-    github: OriolAbril
+twitter_username: OriolAbril
 
 # Set this to true to get LaTeX math equation support
 use_math: true
@@ -53,6 +51,9 @@ show_image: false
 
 # Set this to true to display tags on each post
 show_tags: true
+
+# search
+search: true
 
 # Add your Google Analytics ID here if you have one and want to use it
 google_analytics: UA-165101251-1
@@ -78,7 +79,7 @@ html_escape:
 
 # Everything below here should be left alone. Modifications may break fastpages
 future: true
-theme: minima
+# theme: minima
 plugins:
   - jekyll-feed
   - jekyll-gist
@@ -97,7 +98,10 @@ plugins:
 paginate: 15
 paginate_path: /page:num/
 
-remote_theme: jekyll/minima
+feed:
+  path: atom.xml
+
+remote_theme: mmistakes/jekyll-theme-basically-basic
 
 titles_from_headings:
   enabled:     true
@@ -112,3 +116,12 @@ kramdown:
   auto_ids: true
   hard_wrap: false
   syntax_highlighter: rouge
+
+# Front Matter Defaults
+defaults:
+  # _posts
+  - scope:
+      path: "_posts"
+      type: posts
+    values:
+      read_time: true
