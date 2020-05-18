@@ -1197,4 +1197,8 @@ table td { text-overflow: ellipsis; overflow: hidden; max-width: 15em; }
 
 .highlight .gd { color: #ff5555; }
 
+.nb-badges { padding: 5px; /* this */ }
+
+.nb-badges > div { margin: 5px; /* and that, will result in a 10px gap */ }
+
 /*# sourceMappingURL=main.css.map */
