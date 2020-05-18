@@ -35,7 +35,7 @@
 
       {% if page.layout == 'notebook' %}
         {% if page.badges or page.badges == nil %}
-          <div style="display: flex; justify-content: flex-end">
+          <div class="nb-badges", style="display: flex; justify-content: flex-end">
             {% unless page.hide_github_badge or site.default_badges.github != true %}{% include notebook_github_link.html %}{% endunless %}
             {% unless page.hide_binder_badge or site.default_badges.binder != true  %}{% include notebook_binder_link.html %}{% endunless %}
             {% unless page.hide_colab_badge or site.default_badges.colab != true %}{% include notebook_colab_link.html %}{% endunless %}
