@@ -1,17 +1,84 @@
 ---
-layout: home
-search_exclude: true
-alt_title: "Oriol unraveled"
-sub_title: "Come for the software tips, stay for the maths?"
-image: images/theme_image.png
-introduction: |
-  A well known Catalan saying goes: "Xerrar pels descosits". It means that somebody talks
-  too much. "xerrar" is talking and a "descosit" refers to pieces of fabric that have
-  come undone or been unraveled. I generally do not talk too much, in fact I tend to talk
-  too little unless we are talking about topics such as statistics or programming. I hope
-  this blog can be a place to unravel concepts on statistics, open source and programming,
-  allowing me to _xerrar pels descosits_ in blog version.
-
-  Get ready for some puns and let's dive in!
+layout: null
 ---
+<html>
+  <head>
+    {% include head.html %}
+  </head>
+  <body class="is-loading">
+    <!-- Wrapper -->
+    <div id="wrapper" class="fade-in">
 
+      <!-- Intro -->
+      <div id="intro" class="">
+        <h1>{{site.title}}</h1>
+        <h3>{{site.description}}</h3>
+        <p>Long description</p>
+        <ul class="actions">
+          <li><a href="#header" class="button icon solo fa-arrow-down scrolly">Continue</a></li>
+        </ul>
+      </div>
+
+      <!-- Header -->
+      <header id="header">
+        <a href="{{ "/" | absolute_url }}" class="logo">{{site.title}}</a>
+      </header>
+
+      <!-- Nav -->
+      <nav id="nav">
+        {% include nav.html %}
+      </nav>
+
+      <!-- Main -->
+      <div id="main">
+        <!-- Featured Post -->
+        <article class="post featured">
+          <header class="major">
+            <h2>Oriol unraveled</h2>
+            <h4>Come for the software tips, stay for the maths?</h4>
+
+            <p>A well known Catalan saying goes: "Xerrar pels descosits". It means that somebody talks
+              too much. "xerrar" is talking and a "descosit" refers to pieces of fabric that have
+              come undone or been unraveled. I generally do not talk too much, in fact I tend to talk
+              too little unless we are talking about topics such as statistics or programming. I hope
+              this blog can be a place to unravel concepts on statistics, open source and programming,
+              allowing me to _xerrar pels descosits_ in blog version.<br />
+              Get ready for some puns and let's dive in!</p>
+          </header>
+          <a href="#" class="image main"><img src="{{ "/images/theme_image.png" | absolute_url }}" alt="" /></a>
+        </article>
+
+        <!-- Posts -->
+        <section class="posts">
+          {% for post in site.posts %}
+          <article>
+            <header>
+              <span class="date">{{ post.date | date_to_string }}</span>
+              <h2><a href="{{ post.url | absolute_url }}">{{ post.title }}</a></h2>
+            </header>
+            <a href="{{ post.url | absolute_url }}" class="image fit"><img src="{{ post.image | absolute_url }}" alt="" /></a>
+            <p>{{ post.excerpt }}</p>
+            <ul class="actions">
+              <li><a href="{{ post.url | absolute_url }}" class="button">Full Story</a></li>
+            </ul>
+          </article>
+          {% endfor %}
+
+        </section>
+
+        <!-- Footer -->
+        <footer>
+          <ul class="actions">
+          <li><a href="{{ "/blog/" | absolute_url }}" class="button">Go to blog</a></li>
+        </ul>
+        </footer>
+
+      </div> <!-- closes main -->
+
+      <!-- Footer -->
+      {% include foot.html %}
+
+    </div> <!-- closes fade in -->
+
+  </body>
+</html>
